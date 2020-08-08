@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" 
+minWidth="-Infinity" prefHeight="230.0" prefWidth="280.0" fx:id="loginParent"
+xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coe528.project.PresentLogin">
+   <children>
+      <TextField fx:id="login" layoutX="65.0" layoutY="75.0" promptText="Enter username" />
+      <PasswordField fx:id="pswrd" layoutX="65.0" layoutY="115.0" promptText="Enter password" />
+      <Label layoutX="110.0" layoutY="30.0" text="LOGIN">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="65.0" layoutY="155.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="25.0" prefWidth="150.0" text="SIGN IN" />
+      <Label fx:id="invLogPswrd" layoutX="65.0" layoutY="190.0" prefHeight="20.0" prefWidth="150.0"
+       text="Incorrect login or password!" textFill="#ee2222" visible="false" />
+   </children>
+</AnchorPane>
